@@ -57,7 +57,7 @@ function bidsSpatialPrepro(opt)
 
     groupName = group(iGroup).name;
 
-    parfor iSub = 1:group(iGroup).numSub
+    for iSub = 1:group(iGroup).numSub
 
       matlabbatch = [];
       % Get the ID of the subject
