@@ -5,7 +5,7 @@ function opt = ds000114_getOption()
   % slice timing correction, pre-processing, FFX, RFX.
 
   % The directory where the data are located
-  opt.dataDir = '/home/remi/openneuro/ds000114/raw';
+  opt.dataDir = '/Users/battal/Cerens_files/fMRI/openneuro/ds000114';
 
   % suject to run in each group
   opt.subjects = {'01', '02'};
