@@ -61,18 +61,18 @@ function opt = setDerivativesDir(opt)
     folders{end + 1} = 'cpp_spm';
   end
 
-  if ~strcmp(folders{end - 1}, 'derivatives') && ~strcmp(folders{end}, 'cpp_spm')
-    folders{end + 1} = 'derivatives';
-    folders{end + 1} = 'cpp_spm';
-  end
+  %   if ~strcmp(folders{end - 1}, 'derivatives') && ~strcmp(folders{end}, 'cpp_spm')
+  %     folders{end + 1} = 'derivatives';
+  %     folders{end + 1} = 'cpp_spm';
+  %   end
 
-  try
-    tmp = join(folders, filesep);
-    opt.derivativesDir = tmp{1};
-  catch
-    % for octave
-    opt.derivativesDir = strjoin(folders, filesep);
-  end
+  %   try
+  %     tmp = join(folders, filesep);
+  %     opt.derivativesDir = tmp{1};
+  %   catch
+  %     % for octave
+  %     opt.derivativesDir = strjoin(folders, filesep);
+  %   end
 
   opt.derivativesDir = spm_file(opt.derivativesDir, 'cpath');
 
